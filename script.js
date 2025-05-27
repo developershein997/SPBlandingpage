@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     function updateStaticText() {
       langToggleBtn.textContent = currentLang === 'en' ? 'မြန်မာ' : 'English';
-      document.querySelector('[data-key="teamName"]').textContent = currentLang === 'en' ? 'Digital Team' : 'ဒစ်ဂျစ်တယ် အသင်း';
+      document.querySelector('[data-key="teamName"]').textContent = currentLang === 'en' ? 'Service Plus Booster' : 'Service Plus Booster';
       document.querySelector('[data-key="servicesTitle"]').textContent = currentLang === 'en' ? 'Services' : 'ဝန်ဆောင်မှုများ';
     }
   
