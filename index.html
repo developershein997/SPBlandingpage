@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>Service Plus Booster</title>
+<link rel="icon" type="image/png" href="images/logo.jpg" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <nav>
+    <div class="left">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Digital Team Logo" />
+          </div>
+          
+      <div class="team-name" data-key="teamName">Service Plus Booster</div>
+    </div>
+    <div class="right">
+      <button id="lang-toggle">မြန်မာ</button>
+      <button id="chat-button" title="Chat Options">&#9993;</button>
+    </div>
+  </nav>
+
+  <section class="services" aria-label="Services">
+    <h2 data-key="servicesTitle" style="color:#1E90FF; margin-bottom:20px; text-align:center;">Services</h2>
+    <div class="services-grid" id="services-grid">
+      <!-- Service cards inserted by JS -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>SPB Channel: @SPB_channel14</p>
+        <p>Telegram: @eieikyaw14</p>
+        <p>Phone: 09-404730552</p>
+        <p>Facebook: 09-404730552</p>
+      </div>
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>We are a digital team dedicated to delivering cutting-edge digital solutions with professionalism and integrity.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 IT Future. All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Service Detail Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" aria-describedby="lightboxDesc">
+  <div class="content">
+    <span class="close-btn" id="lightbox-close">&times;</span>
+    <h3 class="title" id="lightboxTitle"></h3>
+    <p class="description" id="lightboxDesc"></p>
+  </div>
+</div>
+
+<!-- Chat Options Lightbox -->
+<div id="chat-lightbox" role="dialog" aria-modal="true" aria-labelledby="chatLightboxTitle">
+  <div class="content chat-content">
+    <span class="close-btn" id="chat-lightbox-close">&times;</span>
+    <h3 id="chatLightboxTitle" style="color:#1E90FF; margin-bottom: 15px;">Chat Options</h3>
+    <div class="chat-options">
+      <div class="chat-option">
+        <label>Messenger Link:</label>
+        <input type="text" readonly value="https://www.facebook.com/share/19KcKZpYx7/" id="messenger-link"/>
+        <button class="copy-btn" data-copy-target="messenger-link">Copy</button>
+      </div>
+      <div class="chat-option">
+        <label>SPB Channel:</label>
+        <input type="text" readonly value="https://t.me/SPB_channel14" id="viber-link"/>
+        <button class="copy-btn" data-copy-target="viber-link">Copy</button>
+      </div>
+      <div class="chat-option">
+        <label>Telegram Link:</label>
+        <input type="text" readonly value="https://t.me/eieikyaw14" id="telegram-link"/>
+        <button class="copy-btn" data-copy-target="telegram-link">Copy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="multi-chat-float" id="multiChatBtn" title="Chat with us">
+    <img src="images/chat.png" alt="Chat" />
+  </div>
+  <div class="chat-options-float" id="chatOptionsFloat">
+    <a href="https://www.facebook.com/share/19KcKZpYx7/" target="_blank" rel="noopener">
+      <img src="images/facebook.png" alt="Facebook" /><span>Facebook</span>
+    </a>
+    <a href="https://t.me/eieikyaw14" target="_blank" rel="noopener">
+      <img src="images/telegram-icon.png" alt="Telegram" /><span>Telegram</span>
+    </a>
+    <a href="https://t.me/SPB_channel14" target="_blank" rel="noopener">
+      <img src="images/telegram-icon.png" alt="Telegram" /><span>Channel</span>
+    </a>
+  </div>
+  
+<script src="script.js"></script>
+
+</body>
+</html>
